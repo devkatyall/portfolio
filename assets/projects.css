@@ -1,0 +1,105 @@
+
+.projects-section {
+    text-align: center;
+    padding: 10% 0;
+  }
+
+  .projects-section h2 {
+    margin: 0;
+    font-size: 72px;
+    font-weight: 300;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    background: #222 -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#222),
+        to(#222),
+        color-stop(0.5, #18cafc)
+      ) 0 0 no-repeat;
+    background-image: -webkit-linear-gradient(
+      -40deg,
+      transparent 0%,
+      transparent 40%,
+      #18cafc 50%,
+      transparent 60%,
+      transparent 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 300px;
+    -webkit-background-size: 300px;
+    animation: zezzz;
+    -webkit-animation: zezzz;
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+
+  .projects-section p{ 
+    font-size: 1.2em;
+    align-self: center;
+    padding: 0 8%;
+    color: rgb(128, 128, 128);
+    margin-bottom: 3%;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .project-card {
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8);
+  }
+
+  .project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .project-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .project-card p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.5;
+  }
+
+  .project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #18cafc;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .project-card a:hover {
+    background-color: #0a98c0;
+  }

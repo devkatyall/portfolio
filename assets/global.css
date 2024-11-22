@@ -1,0 +1,261 @@
+:root{
+    background: #04080F;
+    color: rgba(255, 255, 255, 0.3);
+    --bg: #507DBC;
+    font-family: "Rubik", sans-serif;
+  }
+body{
+  padding: 0;
+  margin: 0;
+  padding: 3% 12% 3% 12% ;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .logo{
+    width: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .r-s{
+    display: flex;
+    gap: 40px;
+  }
+  .r-s1{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+    transition: ease 1s;
+  }
+  .r-s1:hover{
+    color: #fff;
+  }
+  .r-s2{
+    text-decoration: none;
+    color: #18cafc;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+    transition: linear .5s;
+  }
+  .r-s2:hover{
+    filter: drop-shadow(1px 5px 10px #18cafc);
+  }
+
+  .hero{
+    display: flex;
+    flex-direction: column ;
+    padding: 10% 0;
+    width: 70%;
+  }
+
+.h1{
+   margin: 0;
+
+}
+
+.hero-t{
+    font-size: 72px;
+    font-weight: 300;
+  }
+
+.hero-t {
+    color: rgba(255, 255, 255, 0.3);
+    background: #222 -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#222),
+        to(#222),
+        color-stop(0.5, #18cafc)
+      ) 0 0 no-repeat;
+    background-image: -webkit-linear-gradient(
+      -40deg,
+      transparent 0%,
+      transparent 40%,
+      #18cafc 50%,
+      transparent 60%,
+      transparent 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 300px;
+    -webkit-background-size: 300px;
+    animation: zezzz;
+    -webkit-animation: zezzz;
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+@keyframes zezzz {
+    0%,
+    10% {
+      background-position: -100%;
+    }
+    20% {
+      background-position: top left;
+    }
+    100% {
+      background-position: 132%;
+    }
+}
+
+.h1::selection{
+  background: #507DBC;
+}
+.hero span{
+  color: #1CB5E0;
+  font-weight: 600;
+}
+.hero span::selection{
+background: blue;
+}
+
+.h2 p{
+  color: rgb(128, 128, 128);
+  text-align: justify;
+}
+
+.h2{
+  padding-top: 2%;
+  font-size: 1.2em;
+}
+
+@keyframes animate {
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  overflow: hidden;
+  z-index: -1;
+}
+.background li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 19s linear infinite;
+}
+.background li:nth-child(0) {
+  left: 49%;
+  width: 140px;
+  height: 140px;
+  bottom: -140px;
+  animation-delay: 1s;
+}
+.background li:nth-child(1) {
+  left: 8%;
+  width: 193px;
+  height: 193px;
+  bottom: -193px;
+  animation-delay: 5s;
+}
+.background li:nth-child(2) {
+  left: 45%;
+  width: 105px;
+  height: 105px;
+  bottom: -105px;
+  animation-delay: 6s;
+}
+.background li:nth-child(3) {
+  left: 42%;
+  width: 160px;
+  height: 160px;
+  bottom: -160px;
+  animation-delay: 15s;
+}
+.background li:nth-child(4) {
+  left: 1%;
+  width: 115px;
+  height: 115px;
+  bottom: -115px;
+  animation-delay: 10s;
+}
+.background li:nth-child(5) {
+  left: 87%;
+  width: 122px;
+  height: 122px;
+  bottom: -122px;
+  animation-delay: 17s;
+}
+.background li:nth-child(6) {
+  left: 4%;
+  width: 187px;
+  height: 187px;
+  bottom: -187px;
+  animation-delay: 29s;
+}
+.background li:nth-child(7) {
+  left: 85%;
+  width: 156px;
+  height: 156px;
+  bottom: -156px;
+  animation-delay: 2s;
+}
+.background li:nth-child(8) {
+  left: 55%;
+  width: 178px;
+  height: 178px;
+  bottom: -178px;
+  animation-delay: 12s;
+}
+.background li:nth-child(9) {
+  left: 66%;
+  width: 182px;
+  height: 182px;
+  bottom: -182px;
+  animation-delay: 37s;
+}
+@media only screen and (max-width: 767px){
+  :root{
+    width: auto;
+    height: auto;
+  }
+  .background li{
+    width: 10px;
+    height: 10px;
+  }
+  .nav{
+    padding: 20px 40px;
+  }
+  .nav a{
+    font-size: 13px;
+  }
+}
