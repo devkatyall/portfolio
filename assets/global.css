@@ -251,14 +251,66 @@ background: blue;
     width: auto;
     height: auto;
   }
+  body{
+    padding: 5% 10%;
+  }
   .background li{
     width: 10px;
     height: 10px;
   }
-  .nav{
-    padding: 20px 40px;
-  }
   .nav a{
     font-size: 13px;
   }
+  .nav .r-s{
+    display: none;
+  }
+
+  .hero{
+    width: 100%;
+    padding: 15% 0;
+  }
+
+  .h1{
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+.hero-t {
+    color: rgba(255, 255, 255, 0.3);
+    background: #222 -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#222),
+        to(#222),
+        color-stop(0.5, #18cafc)
+      ) 0 0 no-repeat;
+    background-image: -webkit-linear-gradient(
+      -40deg,
+      transparent 0%,
+      transparent 40%,
+      #18cafc 50%,
+      transparent 60%,
+      transparent 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 16em;
+    -webkit-background-size: 16em;
+    animation: zezzz;
+    -webkit-animation: zezzz;
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.h2{
+  width: 100%;
+  font-size: 1em;
+
+}
+.h2 p{
+  text-align: center;
+}
 }

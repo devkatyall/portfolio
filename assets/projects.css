@@ -103,3 +103,48 @@
   .project-card a:hover {
     background-color: #0a98c0;
   }
+
+
+  @media only screen and (max-width: 767px){
+    
+    .projects-section h2{
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 2.35em;
+      background: #222 -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(#222),
+          to(#222),
+          color-stop(0.5, #18cafc)
+        ) 0 0 no-repeat;
+      background-image: -webkit-linear-gradient(
+        -40deg,
+        transparent 0%,
+        transparent 40%,
+        #18cafc 50%,
+        transparent 60%,
+        transparent 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-size: 18em;
+      -webkit-background-size: 18em;
+      animation: zezzz;
+      -webkit-animation: zezzz;
+      animation-duration: 5s;
+      -webkit-animation-duration: 5s;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+  }
+
+  .projects-section p{
+    font-size: 1em;
+    text-align: center;
+    width: auto;
+  }
+
+  .projects-section{
+    padding: 15% 0;
+  }
+  }
