@@ -247,13 +247,18 @@ background: blue;
   animation-delay: 37s;
 }
 
-.menu-button {
+.menu-button{
   background: none;
   border: none;
-  font-size: 3rem;
+  font-size: 2rem;
   cursor: pointer;
   display: none; /* Hidden by default, visible only in mobile */
   color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.menu-button{
+  margin: 0;
 }
 
 .drawer {
@@ -287,7 +292,8 @@ background: blue;
   padding: 1rem;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px){
+  
   .menu-button {
     display: block;
   }
@@ -295,11 +301,7 @@ background: blue;
   .r-s {
     display: none; /* Hide desktop navigation */
   }
-}
 
-
-@media only screen and (max-width: 767px){
-  
 html::-webkit-scrollbar {
   display: none;
 }
