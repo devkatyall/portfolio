@@ -246,7 +246,64 @@ background: blue;
   bottom: -182px;
   animation-delay: 37s;
 }
+
+.menu-button {
+  background: none;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  display: none; /* Hidden by default, visible only in mobile */
+  color: #fff;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background: #000000d0;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+.drawer-link {
+  margin: 1rem 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #18cafc;
+}
+
+.close-drawer {
+  align-self: flex-end;
+  background: black;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  color: white;
+  padding: 1rem;
+}
+
+@media (max-width: 767px) {
+  .menu-button {
+    display: block;
+  }
+
+  .r-s {
+    display: none; /* Hide desktop navigation */
+  }
+}
+
+
 @media only screen and (max-width: 767px){
+  
+html::-webkit-scrollbar {
+  display: none;
+}
+
   :root{
     width: auto;
     height: auto;
