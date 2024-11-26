@@ -173,7 +173,7 @@ background: blue;
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: #18cbfc38;
   animation: animate 19s linear infinite;
 }
 .background li:nth-child(0) {
